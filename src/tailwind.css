@@ -1,15 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Group utilities */
-.btn {
-  @apply px-4 py-2 border-2 sm:px-2 sm:py-0 text-sm text-black
-    focus:outline-none focus:ring-2 focus:ring-offset-2;
-}
-.btn-pink {
-  @apply border-red-200 rounded-full  hover:text-white hover:bg-pink-700 hover:border-transparent  focus:ring-pink-500  dark:text-white dark:focus:ring-offset-gray-700;
-}
 
-.btn-red {
+@layer components {
+  /* Group utilities */
+  .btn {
+    @apply px-4 py-2 border-2 sm:px-2 sm:py-0 text-sm text-black
+      focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-pink {
+    @apply border-red-200 rounded-full  hover:text-white hover:bg-pink-700 hover:border-transparent  focus:ring-pink-500  dark:text-white dark:focus:ring-offset-gray-700;
+  }
+
+  .btn-red {
     @apply border-red-200 rounded-full  hover:text-white hover:bg-red-700 hover:border-transparent  focus:ring-red-500  dark:text-white dark:focus:ring-offset-gray-700;
   }
+}
